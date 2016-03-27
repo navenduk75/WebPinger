@@ -1,5 +1,4 @@
-﻿using System;
-using System.Net.NetworkInformation;
+﻿using System.Net.NetworkInformation;
 using log4net;
 
 namespace WebPinger
@@ -15,7 +14,7 @@ namespace WebPinger
             var ping = new Ping();
             var result = ping.Send("webapi.swamaanshaadi.com");
 
-            Log.Info("Status: " + result.Status.ToString());
+            Log.Info("Ping status to webspi.swamaanshaadi.com: " + result.Status.ToString());
 
             //if (result.Status != IPStatus.Success)
             //    return;
